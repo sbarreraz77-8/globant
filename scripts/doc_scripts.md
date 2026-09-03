@@ -14,7 +14,7 @@ The `scripts/` directory provides standalone utilities for simulating client dat
 
   Succesfully Run
 
-  ![Data Ingestion Execution](../assets/Evidence%20-Load.png)
+  ![Data Ingestion Execution](../assets/Evidence_Load.png)
 
 ---
 
@@ -28,4 +28,4 @@ The `scripts/` directory provides standalone utilities for simulating client dat
 
   Succesfully Run
   
-  ![Metrics Verification Output](../assets/Evidence%20-Metrics.png)
+  ![Metrics Verification Output](../assets/Evidence_Metrics.png)

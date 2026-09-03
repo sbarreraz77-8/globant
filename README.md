@@ -32,7 +32,8 @@ Detailed documentation for each sub-folder component is maintained in module-spe
 | **App Source** | [`app.md`](app/doc_app.md) | API routing, data models, Pydantic schemas, and ingestion services. |
 | **Datasets** | [`data.md`](data/doc_data.md) | Data |
 | **Database DDL** | [`postgres.md`](postgres/doc_postgres.md) | Relational schema definitions, constraints, indices, and audit tables. |
-| **Script Test** | [`scripts.md`](scripts/doc_scripts.md) | Automated chunked CSV loaders and SQL metrics testing scripts. |
+| **Script** | [`scripts.md`](scripts/doc_scripts.md) | Automated chunked CSV loaders and SQL metrics testing scripts. |
+| **Tests** | [`tests.md`](tests/doc_tests.md) | Automated API testing suite using Pytest and in-memory SQLite to validate endpoint logic, batch limits, and error isolation |
 
 ---
 
