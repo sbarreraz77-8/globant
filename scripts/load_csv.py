@@ -8,10 +8,10 @@ API_URL = "http://127.0.0.1:8000/api/v1"
 
 def upload_csv_in_batches(file_path, endpoint, columns):
     if not os.path.exists(file_path):
-        print(f"Error: Archivo {file_path} no encontrado.")
+        print(f"Error: file {file_path} not found.")
         return
 
-    print(f"\nProcesando {file_path}...")
+    print(f"\nProcessing {file_path}...")
     df = pd.read_csv(file_path, header=None, names=columns)
     df = df.replace({np.nan: None})
 
@@ -28,7 +28,7 @@ def upload_csv_in_batches(file_path, endpoint, columns):
         
         if response.status_code == 200:
             result = response.json()
-            print(f"Lote {i+1}/{total_batches} -> Insertados: {result['inserted']} | Fallidos (a tabla errores): {result['failed']}")
+            print(f"Batch {i+1}/{total_batches} -> Inserted: {result['inserted']} | Failures: {result['failed']}")
         else:
             print(f"Error en Lote {i+1}: {response.text}")
 
