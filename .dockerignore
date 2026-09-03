@@ -1,0 +1,9 @@
+.env
+__pycache__/
+*.py[cod]
+.git/
+.github/
+data/
+scripts/
+tests/
+postgres/
