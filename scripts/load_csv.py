@@ -4,7 +4,8 @@ import math
 import numpy as np
 import os
 
-API_URL = "http://127.0.0.1:8000/api/v1"
+#API_URL = "http://127.0.0.1:8000/api/v1"                                   #local
+API_URL = "https://globant-api-340695378961.us-central1.run.app/api/v1"     #cloud run
 
 def upload_csv_in_batches(file_path, endpoint, columns):
     if not os.path.exists(file_path):

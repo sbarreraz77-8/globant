@@ -1,7 +1,8 @@
 import requests
 import pandas as pd
 
-API_URL = "http://127.0.0.1:8000/api/v1/metrics"
+#API_URL = "http://127.0.0.1:8000/api/v1/metrics"                                   #local
+API_URL = "https://globant-api-340695378961.us-central1.run.app/api/v1/metrics"     #cloud run
 
 def test_hires_by_quarter():
     print("")
