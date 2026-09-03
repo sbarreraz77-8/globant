@@ -1,0 +1,4 @@
+CREATE TABLE public.jobs (
+    id INTEGER PRIMARY KEY,
+    job VARCHAR(255) NOT NULL
+);
