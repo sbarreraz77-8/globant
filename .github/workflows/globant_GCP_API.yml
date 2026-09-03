@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 env:
   REGION: us-central1
@@ -34,7 +35,7 @@ jobs:
         gcloud artifacts repositories create ${{ env.REPO_NAME }} \
           --repository-format=docker \
           --location=${{ env.REGION }} \
-          --description="Repositorio para Globant Data Engineering API"
+          --description="Artifact Registry repository for Globant Data Engineering API"
 
     - name: Docker Auth
       run: |-
@@ -57,4 +58,3 @@ jobs:
           --memory 512Mi \
           --cpu 1 \
           --set-env-vars DATABASE_URL="${{ secrets.DATABASE_URL }}"
-          
